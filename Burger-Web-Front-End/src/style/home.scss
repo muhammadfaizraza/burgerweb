@@ -1,0 +1,70 @@
+@import "color";
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Roboto:ital,wght@0,300;1,100;1,400&family=Silkscreen&family=Ubuntu:ital,wght@0,500;1,300&display=swap");
+
+.home {
+  height: 100vh;
+
+  div {
+    padding-left: 6rem;
+    padding-top: 12rem;
+
+    &::before {
+      content: "";
+      width: 100%;
+      margin-top: 85px;
+      height: 100%;
+      background-image: url("../assets/back.jpg");
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.8;
+    }
+
+    > h1 {
+      font-size: 2.9rem;
+      text-transform: uppercase;
+      font-family: "", cursive;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    a {
+      background-color: $Dark;
+      width: 8rem;
+      border: none;
+      color: #fff;
+
+      border-radius: 10px;
+      font-size: 0.9rem;
+      padding: 1rem;
+      text-align: center;
+      position: absolute;
+      display: block;
+      margin: 1rem 0rem;
+      &:hover {
+        cursor: pointer;
+        background-color: $redDark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    > div {
+      text-align: center;
+      align-items: center;
+      padding-top: 10rem;
+      padding-left: 0rem;
+
+      a {
+        margin: 2rem auto;
+      }
+    }
+  }
+}

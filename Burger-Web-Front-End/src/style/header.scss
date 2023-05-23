@@ -1,0 +1,46 @@
+@import "color";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 2rem;
+  background-color: black;
+  box-shadow: 0 0 10px black;
+  > div {
+    display: flex;
+    align-items: center;
+    > svg {
+      font-size: 3.4rem;
+      color: $red;
+    }
+    > a {
+      margin: 0 2rem;
+      color: $lightDark;
+      transition: color 0.3s;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        color: $lightDark;
+      }
+      > svg {
+        color: $red;
+        transition: inherit;
+        font-size: 1.6rem;
+      }
+      &:hover {
+        color: $lightDark;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1rem;
+    > div > a {
+      margin: 0 0.3rem;
+    }
+  }
+}

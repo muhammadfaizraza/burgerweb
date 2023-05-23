@@ -1,0 +1,73 @@
+@import "color";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abyssinica SIL", serif;
+  scroll-behavior: smooth;
+}
+a,
+link {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Roboto:ital,wght@0,300;1,100;1,400&family=Ubuntu:ital,wght@0,500;1,300&display=swap");
+
+.notFound {
+  height: 100vh;
+  width: 100%;
+  background-color: $pink;
+  > main {
+    background-color: white;
+    height: 100%;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+
+    > div {
+      display: flex;
+      align-items: center;
+      margin: 4rem;
+      > svg {
+        font-size: 4rem;
+        color: $red;
+      }
+      > h1 {
+        text-transform: uppercase;
+        align-items: center;
+        font: 100 3rem "Roboto";
+        margin: 0 1rem;
+      }
+    }
+    > a {
+      background-color: $red;
+      color: white;
+      padding: 0.5rem 1rem;
+      align-items: center;
+      margin: 1rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  > svg {
+    font-size: 15rem;
+    color: $red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+  }
+
+  > div {
+    font-size: 1.4rem;
+    opacity: 0.7;
+  }
+}

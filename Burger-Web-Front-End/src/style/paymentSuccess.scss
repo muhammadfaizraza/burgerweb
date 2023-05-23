@@ -1,0 +1,42 @@
+@import "color";
+
+.paymentSuccess{
+
+    background-color: $pink;
+    width: 100%;
+    height: 100vh;
+    >main{
+    
+    height: 100%;
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >h1{
+    letter-spacing: 3px;
+   word-spacing: 1rem;
+    text-transform: uppercase;
+        text-align: center;
+        margin: 3rem;
+   font: 800 2rem "Roboto";     
+    }  >a button{
+        cursor: pointer;
+        background-color: $red;
+        padding: 0.7rem 1rem ;
+        text-transform: capitalize;
+        color: white;
+        border-radius: 10px;
+margin-top: 1rem;
+        &:hover{
+
+background-color: $redDark;
+
+        }
+            }
+  
+        
+}
+}    
